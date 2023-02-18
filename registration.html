@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <header>
+        <h1 id="titulo-principal">Mighty Ducks <span>Hockey League</span></h1>
+
+        <nav id="navbar">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <a class="navbar-brand" href="about.html">About</a>
+          <a class="navbar-brand" href="contact.html">Contact</a>
+          <a class="navbar-brand" href="gameinformation.html"
+            >Game Information</a
+          >
+          <a class="navbar-brand" href="rules.html">Rules</a>
+          <a class="navbar-brand active" href="#">Registration</a>
+        </nav>
+
+        <figure>
+          <img
+            src="assets/imgs/design1_image1.jpg"
+            alt="logo"
+            id="imagen-titulo"
+          />
+        </figure>
+
+        <h2 id="titulo-seccion">Registration</h2>
+      </header>
+
+      <main>
+        <div id="contenedor-seccion">
+          <div style="text-align: center">
+            <h3>Registration Form</h3>
+          </div>
+
+          <form action="">
+            <div class="form-control">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Player's First Name"
+              />
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Last Name"
+              />
+            </div>
+
+            <div class="form-datos">
+              <input type="text" id="address" placeholder="Street Address" />
+            </div>
+
+            <div class="form-control">
+              <input type="text" placeholder="City" />
+              <input type="text" placeholder="Zip Code" />
+            </div>
+
+            <div class="form-control">
+              <div class="form-datos" style="width: 100%">
+                <label for="birth">Birth Date(mm/dd/yyyy):</label>
+                <input type="date" id="birth" name="birth" />
+              </div>
+
+              <div
+                class="form-datos"
+                style="width: 100%; display: flex; align-items: center"
+              >
+                <p style="background-color: transparent; color: white">
+                  Gender:
+                </p>
+                <div style="background-color: transparent; display: flex">
+                  <input type="radio" name="genero" id="male" value="option1" />
+                  <label for="male">Male</label>
+                </div>
+                <div style="background-color: transparent; display: flex">
+                  <input
+                    type="radio"
+                    name="genero"
+                    id="female"
+                    value="option2"
+                  />
+                  <label for="female">Female</label>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="form-control"
+              style="width: 100%; align-items: center; justify-content: center"
+            >
+              <p style="background-color: transparent; color: white">Grade:</p>
+              <div style="background-color: transparent; display: flex">
+                <input
+                  type="radio"
+                  name="grade"
+                  id="pre-school"
+                  value="option1"
+                />
+                <label for="pre-school">PreSchool</label>
+              </div>
+              <div style="background-color: transparent; display: flex">
+                <input type="radio" name="grade" id="first" value="option2" />
+                <label for="first">1st</label>
+              </div>
+              <div style="background-color: transparent; display: flex">
+                <input type="radio" name="grade" id="second" value="option3" />
+                <label for="second">2nd</label>
+              </div>
+              <div style="background-color: transparent; display: flex">
+                <input type="radio" name="grade" id="third" value="option4" />
+                <label for="third">3rd</label>
+              </div>
+              <div style="background-color: transparent; display: flex">
+                <input type="radio" name="grade" id="fourth" value="option5" />
+                <label for="fourth">4th</label>
+              </div>
+              <div style="background-color: transparent; display: flex">
+                <input type="radio" name="grade" id="fifth" value="option6" />
+                <label for="fifth">5th</label>
+              </div>
+            </div>
+
+            <p
+              style="
+                background-color: transparent;
+                color: white;
+                padding: 1rem 1rem 0 1rem;
+              "
+            >
+              Which elementary school do you live near?
+            </p>
+            <p
+              style="
+                background-color: transparent;
+                color: white;
+                padding: 0 1rem;
+              "
+            >
+              Closest School:
+            </p>
+            <select style="margin: 0.2rem 1rem">
+              <option selected>Select</option>
+              <option value="1">AJ Katzenmaier</option>
+              <option value="2">Greenbay</option>
+              <option value="3">Howard A Yeager</option>
+              <option value="4">Marjorie P Hart</option>
+              <option value="5">North Elementary</option>
+              <option value="6">South Elementary</option>
+            </select>
+
+            <p
+              style="
+                background-color: transparent;
+                color: white;
+                padding: 1rem 1rem 0 1rem;
+              "
+            >
+              What positions(s) do you normally play? (check all that apply)
+            </p>
+            <p
+              style="
+                background-color: transparent;
+                color: white;
+                padding: 0 1rem;
+              "
+            >
+              Positions
+            </p>
+
+            <div class="form-control">
+              <div
+                class="form-datos"
+                style="width: 100%; display: flex; align-items: center"
+              >
+                <div style="background-color: transparent; display: flex">
+                  <input type="checkbox" name="position" id="position1" />
+                  <label for="position1">Forward</label>
+                </div>
+                <div style="background-color: transparent; display: flex">
+                  <input type="checkbox" name="position" id="position2" />
+                  <label for="position2">Midfield</label>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="form-datos"
+              style="width: 100%; display: flex; align-items: center"
+            >
+              <div style="background-color: transparent; display: flex">
+                <input type="checkbox" name="position" id="position3" />
+                <label for="position3">Defense</label>
+              </div>
+              <div style="background-color: transparent; display: flex">
+                <input type="checkbox" name="position" id="position4" />
+                <label for="position4">Goalkeeper</label>
+              </div>
+            </div>
+
+            <p
+              style="
+                background-color: transparent;
+                color: white;
+                padding: 0 1rem;
+              "
+            >
+              Uniform Size:
+            </p>
+            <select style="margin: 0.2rem 1rem">
+              <option selected>Select</option>
+              <option value="1">Youth Small</option>
+              <option value="2">Youth Medium</option>
+              <option value="3">Youth Large</option>
+              <option value="4">Small</option>
+              <option value="5">Medium</option>
+              <option value="6">Large</option>
+              <option value="7">Extra-large</option>
+            </select>
+
+            <p
+              style="background-color: transparent; color: white; padding: 1rem"
+            >
+              Permission to Play
+            </p>
+            <p
+              style="
+                background-color: transparent;
+                color: white;
+                padding: 0 1rem;
+              "
+            >
+              I, the parent or guardian of the minor registrant, agree that the
+              registrant and I will abide by all the rules of the Mighty Ducks
+              Hockey League(MDHL). In recognizing the possibility of physical
+              injury associated with hockey and in consideration for the
+              "League" accepting the registrant for its hockey programs and
+              activities, I hereby release, discharge, and/or otherwhise
+              indemnify the MDHL their employees and associated personnel and
+              volunteers, including the facilities used for registrant's
+              participation in the program and/or being transported to or from
+              MDHL sponsored activities, which transportation. By signing below,
+              I hereby agree and authorize the above. In addition, by
+              signingbelow, I also acknowledge that I have read the cancellation
+              policy and agree to the terms.
+            </p>
+
+
+            <label for="signature">Parent/Guardian Signature:</label>
+            <input type="text" name="signature" id="signature" />
+
+            <label for="fdate">Date:</label>
+            <input type="date" name="fdate" id="fdate" style="width: 20%"/>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
